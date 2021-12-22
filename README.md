@@ -27,3 +27,20 @@ see  <a href="https://core.telegram.org/bots#3-how-do-i-create-a-bot">how to cre
 TELEGRAM_TOKEN="Token for your telegram bot"  
 TELEGRAM_CHAT_ID ="your account id in telegram"
 ```
+
+Add package trait to any model you want to get report about it
+example : 
+
+```php
+
+use mohamadmurad\LaravelTelegramReport\Traits\HasTelegramReports;
+
+class User extends Authenticatable
+{
+    use HasTelegramReports;
+....
+
+}
+```
+
+the report send after create , update or delete any record in this model
