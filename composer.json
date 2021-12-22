@@ -1,0 +1,33 @@
+{
+    "name": "mohamadmurad/laravel-telegram-report",
+    "description": "Get Crud Report by telegram",
+    "keywords": [
+        "laravel",
+        "telegram",
+        "activity",
+        "report"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mohamad Murad",
+            "email": "mhdite7@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "mohamadmurad\\LaravelTelegramReport\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mohamadmurad\\LaravelTelegramReport\\TelegramReportServiceProvider"
+            ]
+        }
+    }
+}
